@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Permainan"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/graident">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tombolkembali2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:layout_marginEnd="370dp"
+                android:background="@drawable/effect"
+                android:src="@drawable/punah" />
+
+        </LinearLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center_horizontal"
+               android:orientation="vertical">
+
+               <GridLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:rowCount="6"
+                   android:columnCount="2">
+
+
+               <androidx.cardview.widget.CardView
+                   android:clickable="true"
+                   android:foreground="?android:selectableItemBackground"
+                   android:id="@+id/fotowortel"
+                   android:layout_width="185dp"
+                   android:layout_height="185dp"
+                   app:cardElevation="10dp"
+                   android:layout_columnWeight="0"
+                   android:layout_rowWeight="1"
+                   android:layout_row="1"
+                   android:layout_column="0"
+                   app:cardCornerRadius="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginEnd="10dp">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_horizontal"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/wortel"
+                           android:scaleType="centerCrop"
+                           android:layout_marginTop="-62dp"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:textColor="@color/white"
+                           android:textSize="25dp"
+                           android:fontFamily="@font/bold"
+                           android:layout_marginTop="-50dp"
+                           android:text="Wortel"/>
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:clickable="true"
+                       android:foreground="?android:selectableItemBackground"
+                       android:id="@+id/fotoselada"
+                       android:layout_width="185dp"
+                       android:layout_height="185dp"
+                       app:cardElevation="10dp"
+                       android:layout_columnWeight="1"
+                       android:layout_rowWeight="1"
+                       android:layout_row="1"
+                       android:layout_column="1"
+                       app:cardCornerRadius="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@color/black"
+                           android:orientation="vertical"
+                           android:layout_gravity="center_horizontal">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/sld"
+                               android:scaleType="centerCrop"
+                               android:layout_marginTop="-60dp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:textColor="@color/white"
+                               android:textSize="25dp"
+                               android:fontFamily="@font/bold"
+                               android:layout_marginTop="-50dp"
+                               android:text="Selada"/>
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:clickable="true"
+                       android:foreground="?android:selectableItemBackground"
+                       android:id="@+id/fototimun"
+                       android:layout_width="185dp"
+                       android:layout_height="185dp"
+                       app:cardElevation="10dp"
+                       android:layout_columnWeight="0"
+                       android:layout_rowWeight="1"
+                       android:layout_row="2"
+                       android:layout_column="0"
+                       app:cardCornerRadius="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@color/black"
+                           android:orientation="vertical"
+                           android:layout_gravity="center_horizontal">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/tmn"
+                               android:scaleType="centerCrop"
+                               android:layout_marginTop="-63dp"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:textColor="@color/white"
+                               android:textSize="25dp"
+                               android:fontFamily="@font/bold"
+                               android:layout_marginTop="-50dp"
+                               android:text="Timun"/>
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:clickable="true"
+                       android:foreground="?android:selectableItemBackground"
+                       android:id="@+id/fototoge"
+                       android:layout_width="185dp"
+                       android:layout_height="185dp"
+                       app:cardElevation="10dp"
+                       android:layout_columnWeight="1"
+                       android:layout_rowWeight="1"
+                       android:layout_row="2"
+                       android:layout_column="1"
+                       app:cardCornerRadius="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@color/black"
+                           android:orientation="vertical"
+                           android:layout_gravity="center_horizontal">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/tge"
+                               android:scaleType="centerCrop"
+                               android:layout_marginTop="-60dp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:textColor="@color/white"
+                               android:textSize="25dp"
+                               android:fontFamily="@font/bold"
+                               android:layout_marginTop="-50dp"
+                               android:text="Tauge"/>
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:clickable="true"
+                       android:foreground="?android:selectableItemBackground"
+                       android:id="@+id/fotojagung"
+                       android:layout_width="185dp"
+                       android:layout_height="185dp"
+                       app:cardElevation="10dp"
+                       android:layout_columnWeight="0"
+                       android:layout_rowWeight="1"
+                       android:layout_row="3"
+                       android:layout_column="0"
+                       app:cardCornerRadius="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@color/black"
+                           android:orientation="vertical"
+                           android:layout_gravity="center_horizontal">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/jgg"
+                               android:scaleType="centerCrop"
+                               android:layout_marginTop="-62dp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:textColor="@color/white"
+                               android:textSize="25dp"
+                               android:fontFamily="@font/bold"
+                               android:layout_marginTop="-50dp"
+                               android:text="Jagung"/>
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:clickable="true"
+                       android:foreground="?android:selectableItemBackground"
+                       android:id="@+id/fototomat"
+                       android:layout_width="185dp"
+                       android:layout_height="185dp"
+                       app:cardElevation="10dp"
+                       android:layout_columnWeight="1"
+                       android:layout_rowWeight="1"
+                       android:layout_row="3"
+                       android:layout_column="1"
+                       app:cardCornerRadius="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@color/black"
+                           android:orientation="vertical"
+                           android:layout_gravity="center_horizontal">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/tmt"
+                               android:scaleType="centerCrop"
+                               android:layout_marginTop="-60dp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:textColor="@color/white"
+                               android:textSize="25dp"
+                               android:fontFamily="@font/bold"
+                               android:layout_marginTop="-50dp"
+                               android:text="Tomat"/>
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:clickable="true"
+                       android:foreground="?android:selectableItemBackground"
+                       android:id="@+id/fotobrokoli"
+                       android:layout_width="185dp"
+                       android:layout_height="185dp"
+                       app:cardElevation="10dp"
+                       android:layout_columnWeight="0"
+                       android:layout_rowWeight="1"
+                       android:layout_row="4"
+                       android:layout_column="0"
+                       app:cardCornerRadius="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="50dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:background="@color/black"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:layout_gravity="center_horizontal">
+
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/bpu"
+                               android:scaleType="centerCrop"
+                               android:layout_marginTop="-62dp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:textColor="@color/white"
+                               android:textSize="25dp"
+                               android:fontFamily="@font/bold"
+                               android:layout_marginTop="-50dp"
+                               android:text="Brokoli"/>
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/fotocabai"
+                       android:clickable="true"
+                       android:foreground="?android:selectableItemBackground"
+                       android:layout_width="185dp"
+                       android:layout_height="185dp"
+                       app:cardElevation="10dp"
+                       android:layout_columnWeight="1"
+                       android:layout_rowWeight="1"
+                       android:layout_row="4"
+                       android:layout_column="1"
+                       app:cardCornerRadius="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="50dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:background="@color/black"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:layout_gravity="center_horizontal">
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/cbi"
+                               android:scaleType="centerCrop"
+                               android:layout_marginTop="-60dp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:textColor="@color/white"
+                               android:textSize="25dp"
+                               android:fontFamily="@font/bold"
+                               android:layout_marginTop="-50dp"
+                               android:text="Cabai "/>
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+               </GridLayout>
+           </LinearLayout>
+        </ScrollView>
+</LinearLayout>
